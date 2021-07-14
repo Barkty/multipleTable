@@ -1,12 +1,11 @@
 // Prompt user for a number
-  let num = parseFloat(prompt("Enter a number that is a multiple of 3"));
+  let num = parseInt(prompt("Enter a number that is a multiple of 3"));
   
   // Create the mulplication table
   multiplyTable = number => {
-    for(let x = 0; x < 20; x++) {
-       let result = [];
-       let y = number * x;
-       result.push(y);
+    for(let x = 0; x < 20; x++) {	
+       let multiply = number * x;
+      let result = `${number}`  + " * " + `${x}`  + " = " + `${multiply}`;
        document.write(result);
        document.write("<br>");
        console.log(result);
